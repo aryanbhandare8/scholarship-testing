@@ -1,0 +1,6 @@
+{
+  "name": "Scholarship Finder",
+  "description": "One Place. Every Opportunity. Discover verified scholarships from Government, CSR, NGOs and private foundations across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

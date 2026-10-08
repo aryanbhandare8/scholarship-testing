@@ -1,0 +1,39 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# High-frequency endpoints fallback
+[[redirects]]
+  from = "/api/health"
+  to = "/.netlify/functions/health"
+  status = 200
+
+[[redirects]]
+  from = "/api/scholarships"
+  to = "/.netlify/functions/scholarships"
+  status = 200
+
+[[redirects]]
+  from = "/api/scholarships/*"
+  to = "/.netlify/functions/scholarships"
+  status = 200
+
+[[redirects]]
+  from = "/api/match"
+  to = "/.netlify/functions/match"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api"
+  status = 200
+
+# React SPA single-page fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

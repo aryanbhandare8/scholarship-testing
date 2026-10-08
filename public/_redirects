@@ -1,0 +1,6 @@
+/api/health            /.netlify/functions/health          200
+/api/scholarships      /.netlify/functions/scholarships    200
+/api/scholarships/*    /.netlify/functions/scholarships    200
+/api/match             /.netlify/functions/match           200
+/api/*                 /.netlify/functions/api             200
+/*                     /index.html                         200
